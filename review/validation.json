@@ -1,0 +1,193 @@
+{
+  "board1_hero_light_and_midnight_lockups": {
+    "overflow": [],
+    "outside": 0,
+    "outsideDetails": [],
+    "labelOverlaps": 0,
+    "labelOverlapDetails": [],
+    "labelArtOverlaps": [],
+    "missingImages": [],
+    "labelsChecked": 3,
+    "elementsChecked": 8
+  },
+  "board2_8_versions_and_bezier_geometry": {
+    "overflow": [],
+    "outside": 0,
+    "outsideDetails": [],
+    "labelOverlaps": 0,
+    "labelOverlapDetails": [],
+    "labelArtOverlaps": [],
+    "missingImages": [],
+    "labelsChecked": 27,
+    "elementsChecked": 50
+  },
+  "board3_guidelines_and_it_identity": {
+    "overflow": [],
+    "outside": 0,
+    "outsideDetails": [],
+    "labelOverlaps": 0,
+    "labelOverlapDetails": [],
+    "labelArtOverlaps": [],
+    "missingImages": [],
+    "labelsChecked": 58,
+    "elementsChecked": 79
+  },
+  "index": {
+    "1440": {
+      "overflow": false,
+      "missingImages": []
+    },
+    "390": {
+      "overflow": false,
+      "missingImages": []
+    }
+  },
+  "svg": {
+    "01_SmartBlinkIT_Primary_Horizontal_Light.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 33,
+      "textCount": 0,
+      "compoundHoles": 7
+    },
+    "02_SmartBlinkIT_Primary_Horizontal_Midnight.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 33,
+      "textCount": 0,
+      "compoundHoles": 7
+    },
+    "03_SmartBlinkIT_Stacked_Vertical_Light.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 33,
+      "textCount": 0,
+      "compoundHoles": 7
+    },
+    "04_SmartBlinkIT_Stacked_Vertical_Midnight.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 33,
+      "textCount": 0,
+      "compoundHoles": 7
+    },
+    "05_SmartBlinkIT_Standalone_Icon.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 28,
+      "textCount": 0,
+      "compoundHoles": 7
+    },
+    "06_SmartBlinkIT_SingleColor_Midnight.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 31,
+      "textCount": 0,
+      "compoundHoles": 6
+    },
+    "07_SmartBlinkIT_SingleColor_White.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 31,
+      "textCount": 0,
+      "compoundHoles": 6
+    },
+    "08_SmartBlinkIT_Transparent_Master.svg": {
+      "tags": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "paths": 32,
+      "textCount": 0,
+      "compoundHoles": 7
+    }
+  },
+  "png": {
+    "01_Primary_Horizontal_3200px_Transparent.png": {
+      "size": [
+        3200,
+        473
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    "02_Primary_Midnight_3200px_Transparent.png": {
+      "size": [
+        3200,
+        473
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    "05_Standalone_Icon_3000px_Transparent.png": {
+      "size": [
+        3200,
+        2134
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  },
+  "ai": {
+    "header": "%PDF-1.5",
+    "artboards": 8,
+    "rasterImages": 0,
+    "vectorPaths": 254,
+    "nativeIllustratorOpenTest": "not available: Illustrator not installed"
+  },
+  "pdf": {
+    "pages": 11,
+    "vectorPaths": 1457
+  },
+  "jpg": {
+    "board3_guidelines_and_it_identity.jpg": [
+      3200,
+      2400
+    ],
+    "board1_hero_light_and_midnight_lockups.jpg": [
+      3200,
+      2400
+    ],
+    "board2_8_versions_and_bezier_geometry.jpg": [
+      3200,
+      2400
+    ]
+  },
+  "sync": true,
+  "zip": {
+    "fileCount": 14,
+    "crc": "pass",
+    "sha256": "72da15b23cc0d0a383bcbf551eb6b3e1e90019097461ee1b6d35fbf5be6b5d50"
+  }
+}

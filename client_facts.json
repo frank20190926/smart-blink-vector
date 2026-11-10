@@ -1,0 +1,18 @@
+{
+  "contest": "2801124",
+  "name": "SMART BLiNK IT",
+  "original_asset": "assets/smart_blink.png",
+  "original_px": [
+    462,
+    86
+  ],
+  "palette": [
+    "#061426",
+    "#087FBD",
+    "#13C8F4",
+    "#FFFFFF"
+  ],
+  "tagline": null,
+  "contacts_provided": false,
+  "asset_sha256": "c7f63a38cce2b95bf497212b57d4d0c4f67edbd59f495638290be064c5144b25"
+}

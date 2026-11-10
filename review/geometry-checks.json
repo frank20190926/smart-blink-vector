@@ -1,0 +1,20 @@
+{
+  "mirror_max_error_units": 0,
+  "i_cap_height_error_units": 0.0,
+  "stroke_width_units": 24,
+  "center_fill": "#087FBD",
+  "right_side_dark_fill": "#FFFFFF",
+  "ring_center_alpha": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "solid_terminal_count": 8,
+  "hollow_terminal_count": 6,
+  "path_commands": "M L C Z only",
+  "local_download_links": "pass",
+  "eps_level3_path_structure": "pass; no native PostScript interpreter available"
+}

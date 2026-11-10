@@ -1,0 +1,16 @@
+{
+  "trace_width_units": 24,
+  "center_radius": 83.5,
+  "halo_width": 2.5,
+  "cap_height_y": 176.68400000000003,
+  "dot_top_y": 176.68400000000003,
+  "dot_radius": 30.05,
+  "axis_x": 450,
+  "solid_terminals_per_side": 4,
+  "compound_ring_terminals_per_side": 3,
+  "hero_art_width_fraction": 0.9396407881773399,
+  "original_size": [
+    462,
+    86
+  ]
+}

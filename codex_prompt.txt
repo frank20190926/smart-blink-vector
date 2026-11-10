@@ -1,0 +1,56 @@
+直接执行，不提请审核、不出方案、不提问。
+请先读取 `/Users/frank/Work/13_money/00_项目信息/设计去AI化规范.md`，并严格遵守所有去 AI 化规范与“首图 3 秒缩略图法则”。
+
+### 任务目标：Contest #2801124 — Refine Smart Blink IT Logo ($100.00 USD Guaranteed) V2 全面重构
+我们要撤回旧的网页截图式作品，交付一套完全符合瑞士平面设计规范与 Adobe Illustrator 工业标准的 **V2 精密矢量工程包 + 3 张 `3200×2400` 展示板 (`deliverables/board1..3.jpg`)**。
+
+### 第一步：修复旧版 SVG 几何与字形缺陷（对比原图 `/Users/frank/Work/13_money/02_开发/smart-blink-vector/assets/smart_blink.png`）
+仔细观察原图 `assets/smart_blink.png`，旧版存在 3 个必须修正的几何问题：
+1. **笔画粗细与留白比例**：旧版电路线条过粗（32 units），导致图标显得笨重拥挤。请将电路线条粗细收敛至清脆利落的现代科技比例（约 `22–24 units`），让图标内部负空间呼吸感与原图一致且绝对镜像对称。
+2. **中心圆与 Cyan `#13C8F4` 点缀**：
+   - 原图中心是一个干净的纯色实心圆（`#087FBD`），周围有清晰的环形留白（Negative Space），再往外是左右对称的电路括号弧与 7 条分支（每侧 4 个实心圆端点 + 3 个空心圆环端点，空心圆环必须使用真实 SVG `fill-rule="evenodd"` 复合路径镂空）。
+   - 雇主简介要求：*"Refine the central symbol without losing its original appearance... Use Cyan (`#13C8F4`) sparingly as an accent while retaining the original Blue (`#087FBD`) and Midnight (`#061426`) identity."*
+   - 因此：保持中心实心圆为 `#087FBD`（外侧加一圈极细的 `2.5px` `#13C8F4` 精密光圈或在 3 对空心圆环端点上采用 `#13C8F4` Cyan 点缀，在深色 Midnight `#061426` 背景版中右侧电路采用 `#FFFFFF` 与 `#13C8F4` 搭配，使其在 `#061426` 深色背景上 100% 清晰可见！**注意：旧版 `01_Primary_Horizontal_3200px_Transparent.png` 在深底预览时右侧 `#061426` 几乎隐形，必须确保白底版用 `#061426`，深底版用 `#FFFFFF` / `#13C8F4`！**）。
+3. **`SMART BLiNK IT` 几何字标（纯转曲 `<path>`，零 `<text>` 标签）**：
+   - 严格对齐原图的现代几何无衬线粗体比例：`SMART` 为 `#087FBD`，`BLiNK` 为 `#061426`（深底版为 `#FFFFFF`），`IT` 为 `#087FBD`（或 `#13C8F4`）。
+   - **关键修正**：`BLiNK` 中小写 `i` 的圆点顶部**必须与两侧大写字母 `B, L, N, K` 的字高顶部（Cap-Height）完全齐平**！（原图 `smart_blink.png` 中 `i` 的竖干较低，上方的圆点顶部正好与 `L` 和 `N` 的顶部齐平；旧版把圆点画到了 Cap-Height 之上，显得突兀，必须修正为与 Cap-Height 100% 齐平，圆点可用 `#13C8F4` 或 `#061426`）。
+   - 严禁添加任何口号或副标题（Brief: *"Do not add a slogan or tagline. Avoid 3D effects, heavy gradients, glow effects, and unnecessary decorations. Keep the design modern, flat, professional."*）。
+
+### 第二步：重新生成全套 8 款必需矢量文件与高清 PNG（输出至 `exports/` 并同步至 `docs/exports/`）
+生成以下 100% 纯 `<path>`（零 `<text>`）文件：
+1. `01_SmartBlinkIT_Primary_Horizontal_Light.svg`（白底横版主标）
+2. `02_SmartBlinkIT_Primary_Horizontal_Midnight.svg`（`#061426` 深底横版主标，`BLiNK` 与右侧图标分支高对比反白/`#13C8F4`，绝不可在深底上发黑看不见！）
+3. `03_SmartBlinkIT_Stacked_Vertical_Light.svg`（白底竖版组合）
+4. `04_SmartBlinkIT_Stacked_Vertical_Midnight.svg`（`#061426` 深底竖版组合）
+5. `05_SmartBlinkIT_Standalone_Icon.svg`（独立图标）
+6. `06_SmartBlinkIT_SingleColor_Midnight.svg`（单色 `#061426` 印章版）
+7. `07_SmartBlinkIT_SingleColor_White.svg`（单色 `#FFFFFF` 反白版）
+8. `08_SmartBlinkIT_Transparent_Master.svg`（透明背景母版）
+9. 高清透明 PNG（`>= 3200px` 宽）：
+   - `01_Primary_Horizontal_3200px_Transparent.png`
+   - `02_Primary_Midnight_3200px_Transparent.png`
+   - `05_Standalone_Icon_3000px_Transparent.png`
+10. 工业级矢量母版与规范手册：
+   - `SmartBlinkIT_Master_Vector.ai`（PDF 1.5 兼容格式，Illustrator 可直接编辑）
+   - `SmartBlinkIT_Master_Vector.eps`（PostScript Level 3）
+   - `SmartBlinkIT_Brand_Guidelines_and_Vectors.pdf`
+   - 打包为 `exports/Smart_Blink_IT_Vector_Master_Pack.zip`。
+
+### 第三步：合成 3 张 `3200 × 2400 px` 瑞士品牌设计级展示板（输出至 `deliverables/board1..3.jpg` 并同步至 `docs/deliverables/`）
+**彻底抛弃旧版网页截图风（严禁顶部深色网页导航条、严禁圆角胶囊徽章、严禁假的 `Download SVG` 按钮）！**
+- **`deliverables/board1_hero_light_and_midnight_lockups.jpg`（首图“3 秒缩略图法则”：Logo 本体占画幅 88% 以上！）**：
+  - 上半幅（`Y = 0..1130`，纯净白底 `#FFFFFF`）：超大尺寸居中展示 **Primary Horizontal Logo (Light Background)**，让雇主在缩略图列表里一眼看清极致对称、干净利落的电路图标与 `SMART BLiNK IT` 字标！
+  - 下半幅（`Y = 1130..2260`，深邃午夜蓝 `#061426`）：超大尺寸居中展示 **Primary Horizontal Logo (Midnight `#061426` Background)**，展示反白与 `#13C8F4` Cyan 点缀在深色背景上的高对比度视觉冲击力！
+  - 底部 `140px`（`Y = 2260..2400`）：极简瑞士工程图签栏（`1pt` 细线分隔，标注 `SMART BLINK IT — PRECISION VECTOR IDENTITY SYSTEM · MANDATORY PALETTE: #061426 / #087FBD / #13C8F4 / #FFFFFF · SHEET 01 OF 03`）。
+- **`deliverables/board2_8_versions_and_bezier_geometry.jpg`（全套 8 款标准变体 + Illustrator `Ctrl+Y` 节点对称蓝图 + 原图对比）**：
+  - 上半部：左侧展示 **Original Low-Res Raster (`462×86 px`) vs. Refined Symmetric Vector** 放大细节对比（修正不对称分支、统一 `45°/135°` 走线、齐平 `i` 圆点 Cap-Height）；右侧展示 **Adobe Illustrator `Ctrl+Y` 轮廓线与贝塞尔锚点对称网格图**（证明 100% 纯手工级数学对称矢量，非粗糙自动描图）。
+  - 下半部：8 宫格瑞士细线网格（`1px solid #D8E0E8`），完整呈现简介要求的 **8 Required Logo Versions**（无任何假网页按钮，使用编号 `01`–`08` 与精确尺寸标注）。
+- **`deliverables/board3_guidelines_and_it_identity.jpg`（品牌色彩规范、小尺寸可读性测试与企业 IT 视觉应用）**：
+  - 上半部：左侧为 **Mandatory Brand Color Specifications**（大色块展示 `Midnight #061426`、`Blue #087FBD`、`Cyan #13C8F4`、`Pure White #FFFFFF` 的精确 HEX / RGB / CMYK / Pantone）；右侧为 **Clearspace Protection Zone (`1.0x Icon Diameter`) & Small-Scale Legibility (`64px` / `32px` / `24px` / `16px Favicon`)**。
+  - 下半部：展示平面化的企业级应用规范（企业名片正反面 2D 制图、IT 运维工牌、深浅背景使用准则与 15 件套交付文件清单）。
+
+### 第四步：更新 `index.html`、DOM 零碰撞检查与 `1200px` 预览图
+1. 更新 `/Users/frank/Work/13_money/02_开发/smart-blink-vector/index.html`（确保展示最新 3 张展板与 8 款修好后的 SVG 及下载包）。
+2. 在 Playwright 渲染 3 张展板时执行 DOM 几何检查（确保 `overflow = []`, `outside = 0`, `labelOverlaps = 0`）。
+3. 调用 `/usr/local/bin/python3.11 /Users/frank/Work/13_money/scripts/make_preview.py` 生成 `1200px` 预览图至 `/Users/frank/Work/13_money/02_开发/smart-blink-vector/review/previews/`。
+4. 完成后只回传精简摘要、文件路径与校验结果。
